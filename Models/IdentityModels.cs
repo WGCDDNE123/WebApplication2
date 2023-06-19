@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity;
+using System.Data.Entity.Spatial;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
@@ -22,10 +23,11 @@ namespace WebApplication2.Models
     {
          public DbSet<Customer> Customers { get; set; }
          public DbSet<Movie> Movies { get; set; }
+
          public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
-          {
-          } 
+         {
+         } 
 
         public static ApplicationDbContext Create()
         {
