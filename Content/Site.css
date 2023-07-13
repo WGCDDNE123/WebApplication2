@@ -18,23 +18,3 @@ select,
 textarea {
     max-width: 280px;
 }
-
-.btn,
-.btn-primary{
-   margin-top: 10px;
-   margin-bottom: 10px;
-}
-
-.input-validation-error{
-   margin-bottom: 0;
-   border: red;
-}
-
-h2{
-   margin-block: 10px
-}
-
-.field-validation-error{
-    margin-block: 0;
-    color: red;
-}

@@ -114,8 +114,5 @@ C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations
 C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations.ApplyAnnotationsToCustomerName.resources
 C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations.AddNameToMembershipTypes.resources
 C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations.PopulateNameOfMembershipTypes.resources
-C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations.AddMovieTable.resources
-C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations.Genre.resources
-C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations.RemoveId.resources
-C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations.AddGenreId.resources
-C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations.AddGenreId1.resources
+C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations.AddBirthDateToCustomer.resources
+C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations.AddMovie.resources
