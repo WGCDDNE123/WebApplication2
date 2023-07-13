@@ -24,7 +24,7 @@ namespace WebApplication2
 
                bundles.Add(new StyleBundle("~/Content/css").Include(
                          "~/Content/bootstrap_lumen.css",
-                         "~/Content/site.css"));
+                         "~/Content/Site.css"));
           }
      }
 }

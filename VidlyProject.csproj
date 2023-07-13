@@ -204,13 +204,25 @@
     <Compile Include="Migrations\202306131231578_PopulateNameOfMembershipTypes.designer.cs">
       <DependentUpon>202306131231578_PopulateNameOfMembershipTypes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202306141247282_AddBirthDateToCustomer.cs" />
-    <Compile Include="Migrations\202306141247282_AddBirthDateToCustomer.designer.cs">
-      <DependentUpon>202306141247282_AddBirthDateToCustomer.cs</DependentUpon>
+    <Compile Include="Migrations\202306211303240_AddMovieTable.cs" />
+    <Compile Include="Migrations\202306211303240_AddMovieTable.designer.cs">
+      <DependentUpon>202306211303240_AddMovieTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202306191130358_AddMovie.cs" />
-    <Compile Include="Migrations\202306191130358_AddMovie.designer.cs">
-      <DependentUpon>202306191130358_AddMovie.cs</DependentUpon>
+    <Compile Include="Migrations\202306211340467_Genre.cs" />
+    <Compile Include="Migrations\202306211340467_Genre.designer.cs">
+      <DependentUpon>202306211340467_Genre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202306221318081_RemoveId.cs" />
+    <Compile Include="Migrations\202306221318081_RemoveId.designer.cs">
+      <DependentUpon>202306221318081_RemoveId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307051514514_AddGenreId.cs" />
+    <Compile Include="Migrations\202307051514514_AddGenreId.designer.cs">
+      <DependentUpon>202307051514514_AddGenreId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307051537569_AddGenreId1.cs" />
+    <Compile Include="Migrations\202307051537569_AddGenreId1.designer.cs">
+      <DependentUpon>202307051537569_AddGenreId1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -222,6 +234,8 @@
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModels\MovieFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-grid.css" />
@@ -297,8 +311,11 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Customers\Customer.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
-    <Content Include="Views\Movies\Random.cshtml" />
+    <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -352,11 +369,20 @@
     <EmbeddedResource Include="Migrations\202306131231578_PopulateNameOfMembershipTypes.resx">
       <DependentUpon>202306131231578_PopulateNameOfMembershipTypes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202306141247282_AddBirthDateToCustomer.resx">
-      <DependentUpon>202306141247282_AddBirthDateToCustomer.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202306211303240_AddMovieTable.resx">
+      <DependentUpon>202306211303240_AddMovieTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202306191130358_AddMovie.resx">
-      <DependentUpon>202306191130358_AddMovie.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202306211340467_Genre.resx">
+      <DependentUpon>202306211340467_Genre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306221318081_RemoveId.resx">
+      <DependentUpon>202306221318081_RemoveId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307051514514_AddGenreId.resx">
+      <DependentUpon>202307051514514_AddGenreId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307051537569_AddGenreId1.resx">
+      <DependentUpon>202307051537569_AddGenreId1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
