@@ -114,5 +114,7 @@ C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations
 C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations.ApplyAnnotationsToCustomerName.resources
 C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations.AddNameToMembershipTypes.resources
 C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations.PopulateNameOfMembershipTypes.resources
+C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations.RemoveBirthDateFromCustomer.resources
 C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations.AddBirthDateToCustomer.resources
 C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations.AddMovie.resources
+C:\Users\My PC\source\repos\WebApplication2\obj\Debug\WebApplication2.Migrations.Genres.resources

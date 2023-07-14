@@ -1,4 +1,6 @@
-﻿@model IEnumerable<WebApplication2.Models.Movie>
+﻿@using System.Web.UI.WebControls
+@using WebApplication2.Controllers
+@model IEnumerable<WebApplication2.Models.Movie>
 @{
      ViewBag.Title = "Random";//title of page
      Layout = "~/Views/Shared/_Layout.cshtml";
@@ -9,6 +11,7 @@
     <thead>
     <tr>
         <th>Movies</th>
+        <th>Genres</th>
     </tr>
     </thead>
     
@@ -16,7 +19,8 @@
     @foreach (var movie in Model)
     {
         <tr>
-            <td>@movie.Name</td>
+            <td>@Html.ActionLink(movie.Name, "Details", "Movies", new{id=movie.Id}, null)</td>
+            <td>@movie.Genre.Name</td>
         </tr>
     }
     </tbody>
