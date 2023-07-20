@@ -26,3 +26,15 @@ textarea {
 .table, .table-bordered, .table-hover {
      margin-block-start: 10px;
 }
+
+.field-validation-error, .field-validation-error{
+         color: red;
+}
+
+.input-validation-error{
+ border: 2px solid red;
+}
+
+/*.field-validation-valid{
+     color: red;
+}*/

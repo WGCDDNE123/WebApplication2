@@ -9,7 +9,7 @@ namespace WebApplication2.Controllers
 { 
      public class CustomersController : Controller
      { 
-        private ApplicationDbContext _context;
+          private ApplicationDbContext _context;
 
           public CustomersController()
           {
@@ -41,18 +41,31 @@ namespace WebApplication2.Controllers
 
                var viewModel = new CustomerFormViewModel
                {
+                    Customer = new Customer(),
                     MembershipTypes = membershipTypes
                };
                return View("CustomerForm", viewModel);
           }
 
           [HttpPost]
+          [ValidateAntiForgeryToken]
           public ActionResult Save(Customer customer)
           {
+               if (!ModelState.IsValid)
+               {
+                    var viewModel = new CustomerFormViewModel
+                    {
+                         Customer = customer,
+                         MembershipTypes = _context.MembershipTypes.ToList()
+                    };
+
+                    return View("CustomerForm", viewModel);
+               }
+               
                if(customer.Id == 0)
                     _context.Customers.Add(customer);
                else
-               {  
+               {   
                     var customerInDb = _context.Customers.Single(c => c.Id == customer.Id); 
 
                     customerInDb.Name = customer.Name;
@@ -78,6 +91,7 @@ namespace WebApplication2.Controllers
                     Customer = customer,
                     MembershipTypes = _context.MembershipTypes.ToList()
                };
+
                return View("CustomerForm", viewModel);
           }
      }

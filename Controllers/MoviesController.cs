@@ -52,6 +52,14 @@ namespace WebApplication2.Controllers
         [HttpPost]
         public ActionResult Save(Movie movie)//this is to save the movie
         {
+             if (!ModelState.IsValid)
+             {
+                  var viewModel = new MovieFormViewModel
+                  {
+                       Genres = _context.Genres.ToList()
+                  };
+                  return View("MovieForm", viewModel);
+             }
              if (movie.Id == 0)
              {
                   movie.DateAdded = DateTime.Now;
@@ -80,9 +88,8 @@ namespace WebApplication2.Controllers
              if (movie == null)
                   return HttpNotFound();
 
-             var viewModel = new MovieFormViewModel
+             var viewModel = new MovieFormViewModel(movie)
              {
-                  Movie = movie,
                   Genres = _context.Genres.ToList()
              };
              return View("MovieForm", viewModel);
